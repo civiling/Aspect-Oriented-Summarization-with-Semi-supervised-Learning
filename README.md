@@ -1,1 +1,1 @@
-# Aspect-Oriented-Summarization-with-Semi-supervised-Learning
+# Aspect Oriented Summarization with Semi-supervised Learning
