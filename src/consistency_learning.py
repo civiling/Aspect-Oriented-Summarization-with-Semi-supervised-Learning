@@ -115,13 +115,15 @@ for epoch in range(1):  # 示例：1个训练周期
         loss_1 = outputs.loss
         augmented_outputs = model(**augmented_inputs, labels=targets)
         augmented_loss = augmented_outputs.loss
+
+        #这里使用的是均方误差（MSE）来衡量原始输出和增强输出之间的差异
         # 计算一致性损失
         consistency_loss = torch.nn.functional.mse_loss(outputs.logits, augmented_outputs.logits)
 
 
 
         # 计算损失
-        loss = loss_1 + augmented_loss + consistency_loss  # 这里可以添加一致性损失
+        loss = loss_1 + augmented_loss + consistency_loss  
 
         # 反向传播
         optimizer.zero_grad()
