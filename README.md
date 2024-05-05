@@ -9,7 +9,3 @@ Next, train the model with the unlabeled data and noise injected unlabeled data 
 
 Finally, aspects are extracted from supervised and unsupervised data and aspect-oriented summarization is performed.
 
-## Usage
-In file Data_Augmentation/EDA.py you can perform data augmentation on the CNN/DM dataset.
-
-The core program is src/consistency_learning.py.
